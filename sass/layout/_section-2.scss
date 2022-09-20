@@ -1,0 +1,41 @@
+.subject {
+   background-color: var(--background-color-white);
+   padding-bottom: 0px;
+
+   .section:last-child {
+      padding-bottom: 0px;
+   }
+
+   .subtitle {
+      margin-top: 30px;
+      margin-bottom: 10px;
+
+      @include font();
+      text-transform: uppercase;
+   }
+
+   .desc {
+      line-height: 1.71;
+      color: var(--text-color-silver);
+   }
+}
+
+.flex-block {
+   display: flex;
+   gap: 30px;
+}
+
+.flex-block-svg {
+   display: flex;
+   width: 270px;
+   height: 120px;
+   align-items: center;
+   justify-content: center;
+   background-color: var(--heading-background-color);
+   border-radius: 4px;
+}
+
+.flex-block-icon {
+   width: 70px;
+   height: 70px;
+}
