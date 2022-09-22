@@ -112,7 +112,6 @@ body {
 }
 
 .logo__black {
-  margin-right: 93px;
   font-family: "Raleway";
   font-size: 26px;
   font-weight: 700;
@@ -125,8 +124,6 @@ body {
 }
 
 .main-nav__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
