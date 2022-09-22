@@ -3,8 +3,10 @@
 }
 
 .nav {
+   margin-top: 16px;
+   margin-bottom: 16px;
    align-items: center;
-   display: flex;
+   // display: flex;
    padding-top: 0;
    justify-content: space-between;
 }
@@ -13,6 +15,7 @@
    font-family: 'Raleway';
    @include font(26px, 700, 31px);
    color: var(--button-color);
+
 }
 
 .logo__black {
@@ -24,11 +27,12 @@
 }
 
 .main-nav {
+   // display: flex;
    @extend %center;
 }
 
 .main-nav__list {
-   display: flex;
+   // display: flex;
 
    &:not(:last-child) {
       margin-right: 50px;
@@ -69,8 +73,8 @@
 }
 
 .contact {
+   // display: flex;
    margin-left: auto;
-   display: flex;
 }
 
 .contact__list:not(:last-child) {

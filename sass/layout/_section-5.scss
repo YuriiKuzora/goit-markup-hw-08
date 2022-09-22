@@ -1,12 +1,15 @@
 .slogan-list {
    display: flex;
-   column-gap: 30px;
+   // column-gap: 30px;
+   flex-wrap: wrap;
+   gap: 30px;
 }
 
 .slogan-list-item {
+   display: flex;
    @extend %center;
-   width: 170px;
-   height: 91px;
+   width: 210px;
+   height: 92px;
 
    background-color: var(--background-color-white);
    border: 1px solid var(--border-coption-color);

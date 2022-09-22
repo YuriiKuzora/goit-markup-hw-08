@@ -16,8 +16,7 @@ ol {
 
 button {
    cursor: pointer;
-   justify-content: center;
-   align-items: center;
+   @extend %center;
    text-align: center;
    height: 50px;
    background-color: var(--button-color);
