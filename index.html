@@ -72,6 +72,11 @@
             </div>
           </li>
         </ul>
+        <button type="button" class="open-mobile-menu-btn">
+          <svg class="open-mobile-menu-btn__icon">
+            <use href="./images/svg/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -147,27 +152,55 @@
           <h2 class="slogan">Чим ми займаємося</h2>
           <ul class="gallery">
             <li class="imeg">
-              <img
-                src="./images/index-section-2/img.jpg"
-                alt="Ноутбук"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-section-2/box-1-d.jpg    1x,
+                    ./images/index-section-2/box-1-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index-section-2/box-1-d.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                />
+                />
+              </picture>
               <p class="box">Десктопні додатки</p>
             </li>
             <li class="imeg">
-              <img
-                src="./images/index-section-2/img2.jpg"
-                alt="Телефон"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-section-2/box-2-d.jpg    1x,
+                    ./images/index-section-2/box-2-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index-section-2/box-2-d.jpg"
+                  alt="Телефон"
+                  width="370"
+                />
+              </picture>
               <p class="box">Мобільні додатки</p>
             </li>
             <li class="imeg">
-              <img
-                src="./images/index-section-2/img3.jpg"
-                alt="Планшет"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/index-section-2/box-3-d.jpg    1x,
+                    ./images/index-section-2/box-3-d@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/index-section-2/box-3-d.jpg"
+                  alt="Планшет"
+                  width="370"
+                />
+              </picture>
               <p class="box">Дизайнерські рішення</p>
             </li>
           </ul>
