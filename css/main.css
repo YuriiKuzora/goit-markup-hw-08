@@ -108,6 +108,27 @@ body {
     width: 1200px;
   }
 }
+.logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1923076923;
+  color: var(--button-color);
+}
+
+.logo__black {
+  margin-right: 93px;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.1923076923;
+  color: var(--accent-color);
+}
+
+.main-nav {
+  display: none;
+}
+
 .hero {
   padding: 200px 0px;
   align-items: center;

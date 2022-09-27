@@ -9,19 +9,23 @@
 //    justify-content: space-between;
 // }
 
-// .logo {
-//    font-family: 'Raleway';
-//    @include font(26px, 700, 31px);
-//    color: var(--button-color);
-// }
+.logo {
+   font-family: 'Raleway';
+   @include font(26px, 700, 31px);
+   color: var(--button-color);
+}
 
-// .logo__black {
-//    margin-right: 93px;
+.logo__black {
+   margin-right: 93px;
 
-//    font-family: 'Raleway';
-//    @include font(26px, 700, 31px);
-//    color: var(--accent-color);
-// }
+   font-family: 'Raleway';
+   @include font(26px, 700, 31px);
+   color: var(--accent-color);
+}
+
+.main-nav {
+   display: none;
+}
 
 // .main-nav {
 //    @extend %center;
