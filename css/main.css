@@ -34,6 +34,18 @@
   clip: rect(0 0 0 0);
 }
 
+.btn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 50px;
+  background-color: var(--button-color);
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
 h1,
 h2,
 h3,
@@ -52,15 +64,6 @@ ol {
 
 button {
   cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 50px;
-  background-color: var(--button-color);
-  letter-spacing: 0.06em;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
 }
 
 img {
@@ -126,6 +129,10 @@ body {
 }
 
 .main-nav {
+  display: none;
+}
+
+.contact {
   display: none;
 }
 
