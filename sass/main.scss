@@ -2,12 +2,15 @@
 @import './utils/placeholders';
 @import './utils/mixins';
 @import './utils/visually-hidden';
-@import './utils/_btn';
 
 @import './bace/common';
 @import './bace/link';
 @import './bace/section';
 @import './bace/container';
+
+@import './components/btn';
+@import './components/mobile-menu';
+@import './components/modal-form';
 
 @import './layout/header';
 @import './layout/section-1';
@@ -17,4 +20,3 @@
 @import './layout/section-5';
 @import './layout/footer';
 @import './layout/portfolio';
-@import './layout/modal-form';
