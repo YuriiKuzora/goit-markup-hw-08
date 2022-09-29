@@ -593,6 +593,9 @@ body {
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
   }
+  .user:last-child {
+    margin-bottom: 0;
+  }
   .social-list {
     margin-bottom: 24px;
   }
@@ -648,11 +651,26 @@ body {
 .slogan-list {
   display: flex;
   column-gap: 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.slogan-item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .slogan-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slogan-item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .slogan-list-item {
-  width: 170px;
-  height: 91px;
+  height: 92px;
   background-color: var(--background-color-white);
   border: 1px solid var(--border-coption-color);
   border-radius: 4px;
