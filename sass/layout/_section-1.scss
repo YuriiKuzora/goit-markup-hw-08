@@ -1,33 +1,32 @@
 .hero {
-   padding: 200px 0px;
+   padding: 118px 0px;
    align-items: center;
    text-align: center;
    background-color: var(--background-color-fond-hero);
-   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon/hero-1200.jpg");
+   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/fon/hero-480.jpg");
    background-repeat: no-repeat;
 
-   max-width: 1600px;
-   height: 600px;
+   max-width: 480px;
+   height: 400px;
    margin-left: auto;
    margin-right: auto;
 
    & .hero__subtitle {
-      max-width: 696px;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 30px;
-      @include font(44px, 900, 60px);
+
+      color: var(--text-color-white);
+      @include font(26px, 900, 42px);
       letter-spacing: 0.06em;
       text-transform: uppercase;
       text-align: center;
-      color: var(--text-color-white);
    }
 }
 
-
 .hero__fons .button_hero {
    font-family: Roboto;
-   width: 216px;
+   width: 200px;
 }
 
 .button__text {
@@ -36,3 +35,49 @@
    text-align: center;
    color: var(--text-color-white);
 }
+
+@media screen and (min-width: 768px) {
+   .hero {
+      width: 768px;
+   }
+   
+}
+
+// .hero {
+//    padding: 200px 0px;
+//    align-items: center;
+//    text-align: center;
+//    background-color: var(--background-color-fond-hero);
+//    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon/hero-1200.jpg");
+//    background-repeat: no-repeat;
+
+//    max-width: 1600px;
+//    height: 600px;
+//    margin-left: auto;
+//    margin-right: auto;
+
+//    & .hero__subtitle {
+//       max-width: 696px;
+//       margin-left: auto;
+//       margin-right: auto;
+//       margin-bottom: 30px;
+//       @include font(44px, 900, 60px);
+//       letter-spacing: 0.06em;
+//       text-transform: uppercase;
+//       text-align: center;
+//       color: var(--text-color-white);
+//    }
+// }
+
+
+// .hero__fons .button_hero {
+//    font-family: Roboto;
+//    width: 216px;
+// }
+
+// .button__text {
+//    @extend %center;
+//    @include font(16px, 700, 30px);
+//    text-align: center;
+//    color: var(--text-color-white);
+// }

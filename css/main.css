@@ -111,6 +111,11 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .mobile-menu {
   position: absolute;
   top: 0;
@@ -122,7 +127,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateX(100%);
+  transform: translateY(0%);
   transition: transform 250ms ease-in-out;
 }
 .mobile-menu.is-open {
@@ -216,6 +221,11 @@ body {
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -391,6 +401,21 @@ body {
   margin: 0px auto;
 }
 
+@media screen and (max-width: 767px) {
+  .mobile-menu {
+    display: none;
+  }
+  .open-mobile-menu-btn {
+    line-height: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+  .open-mobile-menu-btn__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -421,18 +446,6 @@ body {
   display: none;
 }
 
-.open-mobile-menu-btn {
-  line-height: 0;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.open-mobile-menu-btn__icon {
-  width: 40px;
-  height: 40px;
-}
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -440,34 +453,33 @@ body {
 }
 
 .hero {
-  padding: 200px 0px;
+  padding: 118px 0px;
   align-items: center;
   text-align: center;
   background-color: var(--background-color-fond-hero);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/fon/hero-1200.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/fon/hero-480.jpg");
   background-repeat: no-repeat;
-  max-width: 1600px;
-  height: 600px;
+  max-width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
 }
 .hero .hero__subtitle {
-  max-width: 696px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  font-size: 44px;
+  color: var(--text-color-white);
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.3636363636;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--text-color-white);
 }
 
 .hero__fons .button_hero {
   font-family: Roboto;
-  width: 216px;
+  width: 200px;
 }
 
 .button__text {
@@ -478,46 +490,56 @@ body {
   color: var(--text-color-white);
 }
 
-.subject {
-  background-color: var(--background-color-white);
-  padding-bottom: 0px;
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 768px;
+  }
 }
-.subject .section:last-child {
-  padding-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .subject {
+    background-color: var(--background-color-white);
+  }
+  .subtitle {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1428571429;
+    text-transform: uppercase;
+  }
+  .desc {
+    line-height: 1.71;
+    color: var(--text-color-silver);
+  }
+  .svg {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .svg:last-child {
+    margin-bottom: 0;
+  }
+  .desc {
+    text-align: justify;
+  }
+  .flex-block-svg {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--heading-background-color);
+    border-radius: 4px;
+  }
+  .flex-block-icon {
+    width: 70px;
+    height: 70px;
+  }
 }
-.subject .subtitle {
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.1428571429;
-  text-transform: uppercase;
+@media screen and (max-width: 767px) {
+  .headline {
+    display: none;
+  }
 }
-.subject .desc {
-  line-height: 1.71;
-  color: var(--text-color-silver);
-}
-
-.flex-block {
-  display: flex;
-  gap: 30px;
-}
-
-.flex-block-svg {
-  display: flex;
-  width: 270px;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--heading-background-color);
-  border-radius: 4px;
-}
-
-.flex-block-icon {
-  width: 70px;
-  height: 70px;
-}
-
 .slogan {
   text-align: center;
   margin-bottom: 50px;
