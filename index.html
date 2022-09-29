@@ -100,36 +100,38 @@
             </li>
             <li><a href="" class="mobile-menu__nav-item link">Контакти</a></li>
           </ul>
-          <ul class="mobile-menu__contact-list">
-            <li>
-              <a
-                href="tel:+380961111111"
-                class="mobile-menu__contact-item-tel link"
-                >+38 096 111 11 11</a
-              >
-            </li>
-            <li>
-              <a
-                href="mailto:info@devstudio.com"
-                class="mobile-menu__contact-item-email link"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mobile-menu__social-list">
-            <li>
-              <a href="" class="mobile-menu__social-item link">Instagram</a>
-            </li>
-            <li>
-              <a href="" class="mobile-menu__social-item link">Twitter</a>
-            </li>
-            <li>
-              <a href="" class="mobile-menu__social-item link">Facebook</a>
-            </li>
-            <li>
-              <a href="" class="mobile-menu__social-item link">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mobile-menu__contact">
+            <ul class="mobile-menu__contact-list">
+              <li>
+                <a
+                  href="tel:+380961111111"
+                  class="mobile-menu__contact-item-tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu__contact-item-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-menu__social-list">
+              <li>
+                <a href="" class="mobile-menu__social-item link">Instagram</a>
+              </li>
+              <li>
+                <a href="" class="mobile-menu__social-item link">Twitter</a>
+              </li>
+              <li>
+                <a href="" class="mobile-menu__social-item link">Facebook</a>
+              </li>
+              <li>
+                <a href="" class="mobile-menu__social-item link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -212,17 +214,25 @@
             <li class="imeg">
               <picture>
                 <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-2/box-1-d.webp    1x,
+                    ./images/index-section-2/box-1-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/index-section-2/box-1-d.jpg    1x,
                     ./images/index-section-2/box-1-d@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/index-section-2/box-1-d.jpg"
-                  alt="Ноутбук"
+                  alt="Клавіатура"
                   width="370"
-                />
                 />
               </picture>
               <p class="box">Десктопні додатки</p>
@@ -230,11 +240,20 @@
             <li class="imeg">
               <picture>
                 <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-2/box-2-d.webp    1x,
+                    ./images/index-section-2/box-2-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/index-section-2/box-2-d.jpg    1x,
                     ./images/index-section-2/box-2-d@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/index-section-2/box-2-d.jpg"
@@ -247,11 +266,20 @@
             <li class="imeg">
               <picture>
                 <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-2/box-3-d.webp    1x,
+                    ./images/index-section-2/box-3-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="
                     ./images/index-section-2/box-3-d.jpg    1x,
                     ./images/index-section-2/box-3-d@2x.jpg 2x
                   "
-                  media="(min-width: 1200px)"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/index-section-2/box-3-d.jpg"
@@ -270,11 +298,61 @@
           <h2 class="slogan">Наша команда</h2>
           <ul class="gallery">
             <li class="user">
-              <img
-                src="./images/index-section-3/Igor-d.jpg"
-                alt="foto"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Igor-m.webp    1x,
+                    ./images/index-section-3/Igor-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Igor-t.webp    1x,
+                    ./images/index-section-3/Igor-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Igor-d.webp    1x,
+                    ./images/index-section-3/Igor-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Igor-m.jpg    1x,
+                    ./images/index-section-3/Igor-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Igor-t.jpg    1x,
+                    ./images/index-section-3/Igor-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Igor-d.jpg    1x,
+                    ./images/index-section-3/Igor-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/index-section-3/Igor-d.jpg"
+                  alt="foto"
+                  width="270"
+                />
+              </picture>
               <div class="user-contact">
                 <h3 class="subtitle">Ігор Дем'яненко</h3>
                 <p class="desc">Product Designer</p>
@@ -329,11 +407,61 @@
               </div>
             </li>
             <li class="user">
-              <img
-                src="./images/index-section-3/Olga-d.jpg"
-                alt="foto"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Olga-m.webp    1x,
+                    ./images/index-section-3/Olga-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Olga-t.webp    1x,
+                    ./images/index-section-3/Olga-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Olga-d.webp    1x,
+                    ./images/index-section-3/Olga-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Olga-m.jpg    1x,
+                    ./images/index-section-3/Olga-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Olga-t.jpg    1x,
+                    ./images/index-section-3/Olga-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Olga-d.jpg    1x,
+                    ./images/index-section-3/Olga-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/index-section-3/Olga-d.jpg"
+                  alt="foto"
+                  width="270"
+                />
+              </picture>
               <div class="user-contact">
                 <h3 class="subtitle">Ольга Рєпіна</h3>
                 <p class="desc">Frontend Developer</p>
@@ -388,11 +516,61 @@
               </div>
             </li>
             <li class="user">
-              <img
-                src="./images/index-section-3/Mykola-d.jpg"
-                alt="foto"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-m.webp    1x,
+                    ./images/index-section-3/Mykola-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-t.webp    1x,
+                    ./images/index-section-3/Mykola-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-d.webp    1x,
+                    ./images/index-section-3/Mykola-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-m.jpg    1x,
+                    ./images/index-section-3/Mykola-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-t.jpg    1x,
+                    ./images/index-section-3/Mykola-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Mykola-d.jpg    1x,
+                    ./images/index-section-3/Mykola-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/index-section-3/Mykola-d.jpg"
+                  alt="foto"
+                  width="270"
+                />
+              </picture>
               <div class="user-contact">
                 <h3 class="subtitle">Микола Тарасов</h3>
                 <p class="desc">Marketing</p>
@@ -447,11 +625,61 @@
               </div>
             </li>
             <li class="user">
-              <img
-                src="./images/index-section-3/Mykhaylo-d.jpg"
-                alt="foto"
-                width="270"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-m.webp    1x,
+                    ./images/index-section-3/Mykhaylo-m@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-t.webp    1x,
+                    ./images/index-section-3/Mykhaylo-t@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-d.webp    1x,
+                    ./images/index-section-3/Mykhaylo-d@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-m.jpg    1x,
+                    ./images/index-section-3/Mykhaylo-m@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-t.jpg    1x,
+                    ./images/index-section-3/Mykhaylo-t@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-section-3/Mykhaylo-d.jpg    1x,
+                    ./images/index-section-3/Mykhaylo-d@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  src="./images/index-section-3/Mykhaylo-d.jpg"
+                  alt="foto"
+                  width="270"
+                />
+              </picture>
               <div class="user-contact">
                 <h3 class="subtitle">Михайло Єрмаков</h3>
                 <p class="desc">UI Designer</p>
