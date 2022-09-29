@@ -227,13 +227,8 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
-  .mobal {
-    width: 100%;
-    height: 609px;
-  }
-}
 .backdrop {
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -253,6 +248,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
   background-color: var(--background-color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -405,21 +402,6 @@ body {
   margin: 0px auto;
 }
 
-@media screen and (max-width: 767px) {
-  .mobile-menu {
-    display: none;
-  }
-  .open-mobile-menu-btn {
-    line-height: 0;
-    border: none;
-    background-color: transparent;
-    padding: 0;
-  }
-  .open-mobile-menu-btn__icon {
-    width: 40px;
-    height: 40px;
-  }
-}
 .page-header {
   padding-top: 16px;
   padding-bottom: 16px;
@@ -448,6 +430,18 @@ body {
 
 .contact {
   display: none;
+}
+
+.open-mobile-menu-btn {
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.open-mobile-menu-btn__icon {
+  width: 40px;
+  height: 40px;
 }
 
 .nav {
@@ -698,14 +692,14 @@ body {
 }
 .footer .logo__white {
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.1923076923;
+  line-height: 1.5833333333;
   color: var(--text-color-white);
 }
 
 .footer-list {
-  display: flex;
+  width: 480px;
   align-items: baseline;
   justify-content: space-between;
 }
@@ -713,6 +707,7 @@ body {
 .logo-address,
 .footer-web-contact,
 .sign-up {
+  text-align: center;
   width: auto;
 }
 
@@ -720,8 +715,14 @@ body {
   margin-bottom: 20px;
 }
 
+.block-address {
+  margin-bottom: 60px;
+}
+
 .contact-footer {
   margin-bottom: 9px;
+  display: flex;
+  flex-direction: column;
 }
 .contact-footer:last-child {
   margin-bottom: 0;
@@ -739,6 +740,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-web-contact {
+  margin-bottom: 60px;
 }
 
 .footer-web-contact-sign-up {
@@ -776,7 +781,9 @@ body {
 
 .footer-form {
   display: flex;
-  column-gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .sign-up-form {
@@ -851,6 +858,21 @@ body {
 .items {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 767px) {
+  .items + .items {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .items {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .items {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .items:nth-child(3n) {
   margin-right: 0px;
