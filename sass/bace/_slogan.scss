@@ -1,0 +1,5 @@
+.slogan {
+   text-align: center;
+   margin-bottom: 30px;
+   @include font($fs: 28px, $lh: 32px);
+}
