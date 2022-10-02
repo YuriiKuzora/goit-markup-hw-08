@@ -38,7 +38,12 @@
 
 @media screen and (min-width: 768px) {
    .hero {
-      width: 768px;
+      max-width: 768px;
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/fon/hero-768.jpg");
+
+      & .hero__subtitle {
+         width: 360px;
+      }
    }
    
 }
