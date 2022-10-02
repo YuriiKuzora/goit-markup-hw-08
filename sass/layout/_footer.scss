@@ -143,16 +143,27 @@
    height: 24px;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
+   .block-address {
+      margin: 0;
+   }
+   .footer-web-contact {
+      margin: 0;
+   }
 
    .footer-list {
       align-items: baseline;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-around;
    }
 
    .sign-up {
       margin-top: 60px;
+   }
+
+   .footer-form-input {
+      width: 450px;
    }
 }
 
