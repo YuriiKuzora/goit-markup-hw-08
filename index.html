@@ -46,6 +46,20 @@
             </li>
           </ul>
         </nav>
+        <!-- ?Menu Burger -->
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          aria-expanded="false"
+          data-menu-open
+        >
+          <svg
+            class="mobile-menu-btn__opens"
+            aria-label="Перемикач мобільного меня"
+          >
+            <use href="./images/svg/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <!-- ?Contact -->
         <ul class="contact">
           <li class="contact__list">
@@ -65,29 +79,18 @@
             >
           </li>
         </ul>
-        <!-- ?Menu Burger -->
-        <!-- <button
-          type="button"
-          class="mobile-menu-btn is-open"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-          data-menu-button
-        >
-          <svg width="40" height="40" aria-label="Перемикач мобільного меня">
-            <use
-              class="mobile-menu-btn__opens"
-              href="./images/svg/sprite.svg#icon-burger"
-            ></use>
-            <use
-              class="mobile-menu-btn__close"
-              href="./images/svg/sprite.svg#icon-close"
-            ></use>
-          </svg>
-        </button> -->
       </div>
       <!-- ?Modile menu  -->
-      <!-- <div class="mobile-menu is-open" id="mobile-menu" data-menu>
+      <div class="mobile-menu" id="mobile-menu" data-menu>
         <div class="container mobile-menu__container">
+          <button class="mobile-menu__close" data-menu-close>
+            <svg
+              class="mobile-menu__close-icon"
+              aria-label="Вимикач мобільного меня"
+            >
+              <use href="./images/svg/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
           <ul class="mobile-menu__nav-list">
             <li>
               <a href="./index.html" class="mobile-menu__nav-item link current"
@@ -134,7 +137,7 @@
             </ul>
           </div>
         </div>
-      </div> -->
+      </div>
     </header>
     <main>
       <!-- ?Section 1 -->

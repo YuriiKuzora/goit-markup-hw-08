@@ -1,14 +1,14 @@
 .page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid var(--border-header-color);
-  position: relative;
   border: none;
 
+  @media screen and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   @media screen and (min-width: 768px) {
-    .page-header {
-      max-width: 768;
-    }
+    max-width: 768;
   }
 
   @media screen and (min-width: 1200px) {
@@ -21,6 +21,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.mobile-menu-btn {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu-btn__opens {
+  width: 40px;
+  height: 40px;
 }
 
 .contact {
@@ -103,7 +120,7 @@
   height: 40px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .main-nav__link {
     &.current {
       color: var(--button-color);
@@ -155,15 +172,13 @@
     color: var(--text-color-black);
     position: relative;
 
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     &:hover,
     &:focus {
-      fill: var(--button-color);
+      color: var(--button-color);
       transition: var(--transition-animacion);
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding-top: 32px;
-      padding-bottom: 32px;
     }
   }
 }
