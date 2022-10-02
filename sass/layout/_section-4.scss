@@ -81,7 +81,18 @@
 }
 
 @media screen and (min-width: 768px) {
+   .gallery{
+      display: flex;
+      gap: 30px;
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
    .user {
       width: 354px;
+      margin: 0;
+   }
+   .user-contact {
+      padding: 0;
    }
 }

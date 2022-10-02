@@ -162,12 +162,13 @@
 }
 
 .modal-form__check-field {
+   display: flex;
+   align-items: center;
    @extend %center;
    font-size: 12px;
    line-height: 1.16;
    color: var(--text-color-silver);
    margin-bottom: 30px;
-   align-items: flex-end;
 }
 
 .modal-form-check-field-link {
