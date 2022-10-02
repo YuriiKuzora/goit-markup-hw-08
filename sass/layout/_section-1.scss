@@ -3,12 +3,6 @@
   align-items: center;
   text-align: center;
   background-color: var(--background-color-fond-hero);
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("/images/fon/hero-480.jpg");
   background-repeat: no-repeat;
 
   max-width: 480px;
@@ -18,24 +12,11 @@
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("/images/fon/hero-768.jpg");
   }
 
   @media screen and (min-width: 1200px) {
     padding: 200px 0px;
     max-width: 1600px;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("/images/fon/hero-1200.jpg");
-
     height: 600px;
     margin-left: auto;
     margin-right: auto;
