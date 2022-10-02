@@ -853,7 +853,6 @@ body {
 
 .logo-footer {
   margin-right: 0;
-  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -918,6 +917,7 @@ body {
 
 .block-address {
   width: 231px;
+  margin-top: 20px;
   margin-bottom: 60px;
 }
 
