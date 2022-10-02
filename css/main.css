@@ -366,22 +366,19 @@ body {
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border-header-color);
-}
-
-.main-nav {
-  display: none;
-}
-
-.open-mobile-menu-btn {
-  line-height: 0;
+  position: relative;
   border: none;
-  background-color: transparent;
-  padding: 0;
 }
-
-.open-mobile-menu-btn__icon {
-  width: 40px;
-  height: 40px;
+@media screen and (min-width: 768px) {
+  .page-header .page-header {
+    max-width: 768;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
 
 .nav {
@@ -391,7 +388,7 @@ body {
 }
 
 .contact {
-  gap: 10px;
+  display: none;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
@@ -400,6 +397,14 @@ body {
     flex-direction: column;
     height: 37px;
     gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
   }
 }
 
@@ -413,8 +418,15 @@ body {
 @media screen and (min-width: 768px) {
   .contact__list_link {
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.1666666667;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__list_link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.1428571429;
   }
 }
 .contact__list_link:hover, .contact__list_link:focus {
@@ -438,22 +450,51 @@ body {
     height: 14px;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .page-header {
-    position: relative;
-    border: none;
+@media screen and (min-width: 1200px) {
+  .contact__list_icon {
+    width: 16px;
+    height: 16px;
   }
-  .contact {
-    display: none;
+}
+
+.main-nav {
+  display: none;
+}
+
+.open-mobile-menu-btn {
+  line-height: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.open-mobile-menu-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-nav__link.current {
+    color: var(--button-color);
+  }
+  .main-nav__link:hover, .main-nav__link:focus {
+    color: var(--button-color);
+    transition: var(--transition-animacion);
+  }
+  .main-nav__link.current::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -1px;
+    background-color: var(--button-color);
+    border-radius: 2px;
   }
 }
 @media screen and (min-width: 768px) {
-  .page-header {
-    max-width: 768;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
   .main {
     display: block;
   }
@@ -477,6 +518,12 @@ body {
   .main-nav__link:hover, .main-nav__link:focus {
     fill: var(--button-color);
     transition: var(--transition-animacion);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .main-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 .hero {

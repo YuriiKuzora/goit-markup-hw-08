@@ -2,6 +2,89 @@
   padding-top: 16px;
   padding-bottom: 16px;
   border-bottom: 1px solid var(--border-header-color);
+  position: relative;
+  border: none;
+
+  @media screen and (min-width: 768px) {
+    .page-header {
+      max-width: 768;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  display: none;
+  margin-left: auto;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 37px;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.contact__list_link {
+  display: flex;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color-silver);
+
+  @media screen and (min-width: 768px) {
+    @include font(12px, 500, 14px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(14px, 500, 16px);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--button-color);
+    transition: var(--transition-animacion);
+  }
+}
+
+.contact__list_icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: var(--text-color-silver);
+
+  .contact__list_link:hover &,
+  .contact__list_link:focus & {
+    fill: var(--button-color);
+    transition: var(--transition-animacion);
+  }
+
+  @media screen and (max-width: 1199px) {
+    width: 14px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .main-nav {
@@ -20,84 +103,34 @@
   height: 40px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+@media screen and (min-width: 1200px) {
+  .main-nav__link {
+    &.current {
+      color: var(--button-color);
+    }
 
-.contact {
-  //  display: flex;
-  // flex-direction: column;
-  gap: 10px;
-  margin-left: auto;
+    &:hover,
+    &:focus {
+      color: var(--button-color);
+      transition: var(--transition-animacion);
+    }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    height: 37px;
-    gap: 10px;
-  }
-}
-
-.contact__list_link {
-  display: flex;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--text-color-silver);
-
-  @media screen and (min-width: 768px) {
-    @include font(12px, 400, 14px);
-  }
-
-  &:hover,
-  &:focus {
-    color: var(--button-color);
-    transition: var(--transition-animacion);
-  }
-}
-
-// .contact__list:not(:last-child) {
-//    margin-right: 50px;
-// }
-
-.contact__list_icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 10px;
-  fill: var(--text-color-silver);
-
-  .contact__list_link:hover &,
-  .contact__list_link:focus & {
-    fill: var(--button-color);
-    transition: var(--transition-animacion);
-  }
-
-  @media screen and (max-width: 1199px) {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .page-header {
-    position: relative;
-    border: none;
-  }
-
-  .contact {
-    display: none;
+    &.current::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      left: 0;
+      bottom: 0;
+      margin-bottom: -1px;
+      background-color: var(--button-color);
+      border-radius: 2px;
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
-  .page-header {
-    max-width: 768;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-
   .main {
     display: block;
   }
@@ -116,8 +149,6 @@
   }
 
   .main-nav__link {
-    // padding-top: 32px;
-    // padding-bottom: 32px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -129,22 +160,10 @@
       fill: var(--button-color);
       transition: var(--transition-animacion);
     }
+
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
   }
 }
-
-// &.current {
-//    color: var(--button-color);
-// }
-
-// &.current::after {
-//    position: absolute;
-//    content: "";
-//    display: block;
-//    width: 100%;
-//    height: 4px;
-//    left: 0;
-//    bottom: 0;
-//    margin-bottom: -1px;
-//    background-color: var(--button-color);
-//    border-radius: 2px;
-// }
