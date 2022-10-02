@@ -46,6 +46,12 @@
 }
 
 .logo-address {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
   }

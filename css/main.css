@@ -811,6 +811,13 @@ body {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .logo-address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .logo-address {
     margin-right: 70px;
