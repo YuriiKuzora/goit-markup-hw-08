@@ -934,6 +934,11 @@ body {
   gap: 10px;
 }
 
+.list {
+  display: flex;
+  font-style: normal;
+}
+
 .social-list {
   display: flex;
   justify-content: center;
@@ -1210,19 +1215,33 @@ body {
 .gallery-items {
   display: flex;
   flex-wrap: wrap;
+  grid-gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .gallery-items {
+    margin-top: 40px;
+  }
 }
 
-.list {
+.gallery-items-img {
+  width: 100%;
+}
+
+.footer-list-btn {
   display: flex;
   font-style: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
 }
-.portfolio .list {
-  justify-content: center;
+@media screen and (min-width: 768px) {
+  .footer-list-btn {
+    justify-content: center;
+  }
 }
-.list .button {
+.footer-list-btn .button {
   font-family: Roboto;
   margin-right: 8px;
-  margin-bottom: 50px;
   padding: 6px 22px;
   background-color: var(--heading-background-color);
   width: auto;
@@ -1231,38 +1250,26 @@ body {
   font-weight: 500;
   line-height: 1.625;
 }
-.list .button:hover, .list .button:focus {
+@media screen and (min-width: 768px) {
+  .footer-list-btn .button {
+    margin-bottom: 50px;
+  }
+}
+.footer-list-btn .button:hover, .footer-list-btn .button:focus {
   background-color: var(--button-color);
   transition: var(--transition-animacion);
   color: var(--text-color-white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (max-width: 767px) {
-  .items + .items {
-    margin-top: 30px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .items {
-    flex-basis: calc((100% - 30px) / 2);
-  }
-}
 @media screen and (min-width: 1200px) {
   .items {
-    flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
   }
-}
-z .items:nth-child(3n) {
-  margin-right: 0px;
-}
-.items:nth-last-child(-n+3) {
-  margin-bottom: 0px;
 }
 .items .text {
   padding-top: 20px;
   padding-left: 24px;
-  padding-right: 24px;
   padding-bottom: 20px;
   border-bottom: 1px solid var(--border-items-color);
   border-left: 1px solid var(--border-items-color);
@@ -1274,7 +1281,7 @@ z .items:nth-child(3n) {
   line-height: 2;
   letter-spacing: 0.06em;
   margin-bottom: 4px;
-  text-align: left;
+  text-align: start;
 }
 .items .desc {
   font-size: 16px;
