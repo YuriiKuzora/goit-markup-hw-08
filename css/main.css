@@ -132,43 +132,6 @@ body {
   border: none;
 }
 
-@media screen and (max-width: 767px) {
-  .hero {
-    background-size: 480px 400px;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-480.jpg);
-    background-color: var(--background-color-fond-hero);
-  }
-}
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-480@2x.jpg);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
-    background-size: 768px 400px;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-768.jpg);
-    background-color: var(--background-color-fond-hero);
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-768@2x.jpg);
-  }
-}
-@media screen and (min-width: 1199px) {
-  .hero {
-    background-size: 1600px 600px;
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-1200.jpg);
-    background-color: var(--background-color-fond-hero);
-  }
-}
-@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/fon/hero-1200@2x.jpg);
-  }
-}
-
 .logo {
   font-family: "Raleway";
   font-size: 24px;
@@ -249,7 +212,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 48px;
   padding-left: 40px;
+  padding-bottom: 48px;
   height: 100%;
   background-color: var(--background-color-white);
 }
@@ -273,7 +238,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 33px;
-  padding-top: 48px;
 }
 
 .mobile-menu__nav-item {
@@ -285,10 +249,6 @@ body {
 }
 .mobile-menu__nav-item:hover {
   color: var(--button-color);
-}
-
-.mobile-menu__contact {
-  padding-bottom: 48px;
 }
 
 .mobile-menu__contact-list {
@@ -511,7 +471,9 @@ body {
 .modal-form-check-field-link {
   font-size: 12px;
   line-height: 1.16;
-  text-decoration-line: underline;
+}
+
+.modal-form__check-field-link-contract {
   color: var(--button-color);
 }
 
@@ -718,9 +680,33 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .hero {
+    background-size: 480px 400px;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-480.jpg);
+    background-color: var(--background-color-fond-hero);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-480@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-size: 768px 400px;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-768.jpg);
+    background-color: var(--background-color-fond-hero);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-768@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -730,6 +716,18 @@ body {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .hero {
+    background-size: 1600px 600px;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-1200.jpg);
+    background-color: var(--background-color-fond-hero);
+  }
+}
+@media screen and (min-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 1199px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon/hero-1200@2x.jpg);
   }
 }
 .hero .hero__subtitle {
@@ -803,7 +801,7 @@ body {
   height: 70px;
 }
 
-.subtitle {
+.flex-block-subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 14px;
@@ -811,6 +809,11 @@ body {
   line-height: 1.1428571429;
   background-color: var(--background-color-white);
   text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .flex-block-subtitle {
+    text-align: start;
+  }
 }
 
 .desc {
@@ -827,10 +830,6 @@ body {
   .desc {
     width: 270px;
   }
-}
-
-.svg {
-  text-align: center;
 }
 
 @media screen and (max-width: 1199px) {
@@ -927,10 +926,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .user-contact {
+    padding-bottom: 30px;
+  }
 }
 
 .social-list-user {
-  margin-bottom: 30px;
   gap: 10px;
 }
 
@@ -1075,7 +1080,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .sign-up {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -1083,6 +1088,11 @@ body {
   width: 231px;
   margin-top: 20px;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .block-address {
+    margin-bottom: 0;
+  }
 }
 
 .contact-footer {
@@ -1126,8 +1136,11 @@ body {
   margin-bottom: 20px;
 }
 
-.social-list {
+.footer-social-list {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .social-list-link {

@@ -27,12 +27,16 @@
   height: 70px;
 }
 
-.subtitle {
+.flex-block-subtitle {
   margin-top: 30px;
   margin-bottom: 10px;
   @include font();
   background-color: var(--background-color-white);
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .desc {
@@ -47,8 +51,4 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
   }
-}
-
-.svg {
-  text-align: center;
 }

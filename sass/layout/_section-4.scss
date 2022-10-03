@@ -48,10 +48,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .social-list-user {
-  margin-bottom: 30px;
   gap: 10px;
 }
 

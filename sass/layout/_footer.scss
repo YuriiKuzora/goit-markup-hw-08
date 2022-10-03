@@ -58,7 +58,7 @@
 
 .sign-up {
   @media screen and (min-width: 1200px) {
-    margin-left: 93px;
+    margin-left: auto;
   }
 }
 
@@ -66,6 +66,10 @@
   width: 231px;
   margin-top: 20px;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 
 .contact-footer {
@@ -108,8 +112,11 @@
   margin-bottom: 20px;
 }
 
-.social-list {
+.footer-social-list {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
 }
 
 .social-list-link {
