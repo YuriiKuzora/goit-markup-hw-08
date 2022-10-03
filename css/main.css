@@ -736,7 +736,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
   color: var(--text-color-white);
   font-size: 26px;
   font-weight: 900;
@@ -744,6 +743,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .hero .hero__subtitle {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero .hero__subtitle {
