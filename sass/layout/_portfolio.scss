@@ -6,19 +6,15 @@
 .list {
   display: flex;
   font-style: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 15px;
 
-  @media screen and (min-width: 768px) {
+  .portfolio & {
     justify-content: center;
-    margin-bottom: 50px;
   }
 
   & .button {
     font-family: Roboto;
     margin-right: 8px;
-    //  margin-bottom: 50px;
+    margin-bottom: 50px;
     padding: 6px 22px;
 
     background-color: var(--heading-background-color);
@@ -39,7 +35,9 @@
 
 .items {
   @media screen and (max-width: 767px) {
-    margin-top: 30px;
+    & + & {
+      margin-top: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -49,8 +47,7 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 60px) / 3);
   }
-
-  &:nth-child(3n) {
+  z &:nth-child(3n) {
     margin-right: 0px;
   }
 

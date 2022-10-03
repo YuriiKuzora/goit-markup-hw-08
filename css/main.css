@@ -1215,19 +1215,14 @@ body {
 .list {
   display: flex;
   font-style: normal;
-  flex-direction: row;
-  flex-wrap: wrap;
-  row-gap: 15px;
 }
-@media screen and (min-width: 768px) {
-  .list {
-    justify-content: center;
-    margin-bottom: 50px;
-  }
+.portfolio .list {
+  justify-content: center;
 }
 .list .button {
   font-family: Roboto;
   margin-right: 8px;
+  margin-bottom: 50px;
   padding: 6px 22px;
   background-color: var(--heading-background-color);
   width: auto;
@@ -1244,7 +1239,7 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-  .items {
+  .items + .items {
     margin-top: 30px;
   }
 }
@@ -1258,7 +1253,7 @@ body {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-.items:nth-child(3n) {
+z .items:nth-child(3n) {
   margin-right: 0px;
 }
 .items:nth-last-child(-n+3) {
